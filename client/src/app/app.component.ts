@@ -12,7 +12,7 @@ export class AppComponent {
   searchTerm = '';
   isCollapse = true;
 
-  constructor(private router: Router, private data: DataService) {
+  constructor(private router: Router, public data: DataService) {
     this.data.getProfile();
     this.data.cartItems = this.data.getCart().length;
   }

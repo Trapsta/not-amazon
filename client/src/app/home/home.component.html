@@ -32,7 +32,7 @@
             <img src="{{ product.image }}" alt="product" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">{{ product.title }}</h5>
-              <p class="card-text">{{ product.price | currency }}</p>
+              <p class="card-text">{{ product.price | currency: 'KES ' }}</p>
             </div>
           </div>
         </a>
