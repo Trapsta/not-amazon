@@ -3,7 +3,11 @@
 	"main": "index.js",
 	"license": "MIT",
 	"scripts": {
-		"start": "nodemon index.js"
+		"start": "node index.js"
+	},
+	"dev": "nodemon index.js -e js,html",
+	"engines": {
+		"node": "8.11.3"
 	},
 	"dependencies": {
 		"algoliasearch": "^3.24.11",

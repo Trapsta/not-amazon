@@ -12,7 +12,7 @@ router.post('/', auth, (req, res) => {
 		.then(customer =>
 			stripe.charges.create({
 				amount: currentCharges * 100,
-				currency: 'usd',
+				currency: 'KES',
 				customer: customer.id
 			})
 		)
